@@ -71,10 +71,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "Stablecoin supply on NEAR higher than a year ago",
-  "value": -42.979748,
+  "value": -42.954558,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-10-31"
+  "as_of": "2026-11-01"
  },
  {
   "id": "tvl_growth",
@@ -82,10 +82,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "DeFi TVL on NEAR higher than a year ago (USD, price-sensitive)",
-  "value": 33.587523,
+  "value": 30.885621,
   "threshold_value": 0,
   "status": "BULL",
-  "as_of": "2026-10-31"
+  "as_of": "2026-11-01"
  },
  {
   "id": "security_budget",
@@ -93,7 +93,7 @@
   "direction": ">",
   "threshold": 40,
   "claim": "At least 40% of supply is staked",
-  "value": 45.174481,
+  "value": 45.174482,
   "threshold_value": 40,
   "status": "BULL",
   "as_of": "latest"
