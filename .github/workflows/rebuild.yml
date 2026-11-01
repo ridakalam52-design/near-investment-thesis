@@ -1,0 +1,39 @@
+name: Rebuild thesis data + dashboard
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # daily, 03:17 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["near_thesis/**", "build.py", "assumptions.yaml", "templates/**", "requirements.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Tests (offline rebuild from the committed snapshot)
+        run: python -m unittest discover -s tests -v
+      - name: Build from live public data
+        run: python build.py
+      - name: Commit refreshed data, dashboard and THESIS.md
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs THESIS.md
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: daily rebuild $(date -u +%Y-%m-%d)"
+          git push

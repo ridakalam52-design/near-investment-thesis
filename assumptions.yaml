@@ -1,0 +1,104 @@
+# ---------------------------------------------------------------------------
+# Every assumption the model uses lives here. Starting values (supply, stake,
+# fees, tx/day, inflation) are NOT here: they are fetched live by the pipeline.
+# Edit a number, run `python build.py`, and the dashboard + THESIS.md update.
+# ---------------------------------------------------------------------------
+
+protocol:
+  # NEAR burns 70% of gas fees; 30% goes to the developer of the called contract.
+  # Source: NEAR docs (gas / economics) and DefiLlama's NEAR fee methodology.
+  fee_burn_share: 0.70
+
+model:
+  horizon_years: 5
+  # Average validator commission taken from staking rewards. NOT fetched (would need
+  # one view call per pool); 0.10 is an assumption - change it and re-run.
+  avg_validator_commission: 0.10
+  # Fraction of max_inflation_rate actually minted (validator uptime). If null, the
+  # pipeline calibrates it from the realized 365d supply change + burn.
+  issuance_realization: null
+
+# Scenario growth assumptions. Annual rates applied to the live starting values.
+scenarios:
+  bear:
+    description: "Usage shrinks; fees per tx flat; stakers drift out."
+    tx_growth: -0.25
+    fee_per_tx_growth: 0.0
+    staking_ratio_change_pp_per_year: -2.0
+    max_inflation_rate: null      # null = keep the on-chain value
+  base:
+    description: "Usage grows moderately; fee per tx flat."
+    tx_growth: 0.25
+    fee_per_tx_growth: 0.0
+    staking_ratio_change_pp_per_year: 0.0
+    max_inflation_rate: null
+  bull:
+    description: "Agent/Intents-driven usage doubles every year; fee per tx flat."
+    tx_growth: 1.00
+    fee_per_tx_growth: 0.0
+    staking_ratio_change_pp_per_year: 1.0
+    max_inflation_rate: null
+
+# Falsifiable signals. Each is evaluated on fetched data every build.
+# direction: ">" means the bull case needs value > threshold.
+signals:
+  - id: intents_growth
+    metric: intents_volume_30d_yoy_pct
+    direction: ">"
+    threshold: 0
+    claim: "NEAR Intents 30d volume is higher than a year ago"
+  - id: intents_momentum
+    metric: intents_volume_30d_mom_pct
+    direction: ">"
+    threshold: 0
+    claim: "NEAR Intents 30d volume is growing month over month"
+  - id: usage_growth
+    metric: active_accounts_30d_avg_yoy_pct
+    direction: ">"
+    threshold: 0
+    claim: "Daily active accounts (30d avg) higher than a year ago"
+  - id: tx_growth
+    metric: txns_30d_avg_yoy_pct
+    direction: ">"
+    threshold: 0
+    claim: "Daily transactions (30d avg) higher than a year ago"
+  - id: fee_growth
+    metric: fees_near_30d_yoy_pct
+    direction: ">"
+    threshold: 0
+    claim: "Gas fees (NEAR-denominated, 30d) higher than a year ago"
+  - id: burn_offsets_issuance
+    metric: burn_to_issuance_pct
+    direction: ">"
+    threshold: 10
+    claim: "Fee burn offsets at least 10% of max issuance"
+  - id: stablecoin_growth
+    metric: stablecoin_supply_365d_change_pct
+    direction: ">"
+    threshold: 0
+    claim: "Stablecoin supply on NEAR higher than a year ago"
+  - id: tvl_growth
+    metric: tvl_yoy_pct
+    direction: ">"
+    threshold: 0
+    claim: "DeFi TVL on NEAR higher than a year ago (USD, price-sensitive)"
+  - id: security_budget
+    metric: staking_ratio_pct
+    direction: ">"
+    threshold: 40
+    claim: "At least 40% of supply is staked"
+  - id: intents_leads_usage
+    metric: hyp_intents_lead_corr
+    direction: ">"
+    threshold: hyp_noise_band
+    claim: "Weekly Intents volume changes lead on-chain usage changes by 1-4 weeks (corr above noise)"
+  - id: intents_beats_price
+    metric: hyp_intents_minus_price_lead_corr
+    direction: ">"
+    threshold: 0
+    claim: "Intents volume is a better leading indicator of usage than NEAR price"
+  - id: intents_coincident_usage
+    metric: hyp_intents_coincident_corr
+    direction: ">"
+    threshold: hyp_noise_band
+    claim: "Weekly Intents volume moves together with on-chain usage in the same week (corr above noise)"
