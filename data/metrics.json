@@ -1,129 +1,129 @@
 {
- "generated_at": "2026-11-03T10:53:01+00:00",
+ "generated_at": "2026-11-04T10:54:50+00:00",
  "headline": {
   "txns_30d_avg": {
-   "value": 698322.733333,
+   "value": 690247.366667,
    "unit": "transactions/day",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "mean of daily `txns` over the 30 days to as_of"
   },
   "txns_30d_avg_yoy_pct": {
-   "value": -84.582442,
+   "value": -84.745649,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d mean of `txns` vs the same 30d window one year earlier"
   },
   "active_accounts_30d_avg": {
-   "value": 65702.6,
+   "value": 62207.5,
    "unit": "active accounts/day",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "mean of daily `active_accounts` over the 30 days to as_of"
   },
   "active_accounts_30d_avg_yoy_pct": {
-   "value": -75.749097,
+   "value": -76.972262,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d mean of `active_accounts` vs the same 30d window one year earlier"
   },
   "new_accounts_30d_avg": {
-   "value": 9627.566667,
+   "value": 9605.033333,
    "unit": "new accounts/day",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "mean of daily `new_accounts` over the 30 days to as_of"
   },
   "new_accounts_30d_avg_yoy_pct": {
-   "value": -95.964552,
+   "value": -95.932509,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d mean of `new_accounts` vs the same 30d window one year earlier"
   },
   "fees_near_30d": {
-   "value": 36200.271273,
+   "value": 36038.315602,
    "unit": "NEAR",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "sum of daily `txn_fee` (yoctoNEAR/1e24) over 30 days"
   },
   "fees_near_30d_yoy_pct": {
-   "value": -63.694152,
+   "value": -63.865389,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d fee sum vs same window a year earlier"
   },
   "fees_usd_30d_nearblocks": {
-   "value": 178481.587743,
+   "value": 176989.79467,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "sum of daily `txn_fee_usd` over 30 days"
   },
   "fees_near_annualized": {
-   "value": 440436.633826,
+   "value": 438466.173152,
    "unit": "NEAR/yr",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d fee sum x 365/30"
   },
   "burn_near_annualized": {
-   "value": 308305.643678,
+   "value": 306926.321206,
    "unit": "NEAR/yr",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "annualized fees x burn share 0.7 (NEAR burns 70% of gas; 30% goes to contract devs)"
   },
   "fee_per_tx_near": {
-   "value": 0.001728,
+   "value": 0.00174,
    "unit": "NEAR/tx",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "30d fee sum / 30d tx sum"
   },
   "supply_net_change_365d": {
-   "value": 31700464.535733,
+   "value": 31724286.429032,
    "unit": "NEAR",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "total_supply(as_of) - total_supply(as_of - 365d)"
   },
   "realized_net_inflation_365d_pct": {
-   "value": 2.478627,
+   "value": 2.480338,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "net 365d supply change / supply a year ago (already net of burn)"
   },
   "burn_near_365d": {
-   "value": 429253.342987,
+   "value": 427489.432956,
    "unit": "NEAR",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "365d fee sum x 0.7"
   },
   "implied_gross_issuance_365d": {
-   "value": 32129717.87872,
+   "value": 32151775.861987,
    "unit": "NEAR",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts",
    "how": "net supply change + burn = what validators were minted"
   },
   "total_supply_rpc": {
-   "value": 1310703803.057726,
+   "value": 1310780047.775123,
    "unit": "NEAR",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "rpc_block",
-   "how": "block 222860110 header.total_supply"
+   "how": "block 223007070 header.total_supply"
   },
   "block_height": {
-   "value": 222860110,
+   "value": 223007070,
    "unit": "block",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "rpc_block",
    "how": "latest final block"
   },
@@ -149,128 +149,128 @@
    "how": "protocol_version"
   },
   "total_staked": {
-   "value": 593276081.475901,
+   "value": 586296801.000707,
    "unit": "NEAR",
    "as_of": "latest",
    "source": "rpc_validators",
    "how": "sum of current_validators[].stake"
   },
   "validator_count": {
-   "value": 375,
+   "value": 379,
    "unit": "validators",
    "as_of": "latest",
    "source": "rpc_validators",
    "how": "len(current_validators)"
   },
   "staking_ratio_pct": {
-   "value": 45.263932,
+   "value": 44.728847,
    "unit": "%",
    "as_of": "latest",
    "source": "rpc_validators+rpc_block",
    "how": "total_staked / total_supply"
   },
   "max_gross_issuance_annual": {
-   "value": 32767595.076443,
+   "value": 32769501.194378,
    "unit": "NEAR/yr",
    "as_of": "latest",
    "source": "rpc_protocol_config+rpc_block",
    "how": "total_supply x max_inflation_rate (upper bound; actual scales with validator uptime)"
   },
   "staking_apr_gross_pct": {
-   "value": 5.523161,
+   "value": 5.589234,
    "unit": "%",
    "as_of": "latest",
    "source": "rpc",
    "how": "issuance x (1 - protocol_reward_rate) / total_staked, before validator commission"
   },
   "burn_to_issuance_pct": {
-   "value": 0.940886,
+   "value": 0.936622,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts+rpc",
    "how": "annualized 30d burn / max gross issuance"
   },
   "breakeven_tx_per_day": {
-   "value": 74218115.977303,
+   "value": 73710554.455717,
    "unit": "tx/day",
    "as_of": "latest",
    "source": "nearblocks_charts+rpc",
    "how": "tx/day needed for burn = issuance at today's fee per tx"
   },
   "tvl_usd": {
-   "value": "177432157",
+   "value": "188457342",
    "unit": "USD",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_chain_tvl",
    "how": "latest DefiLlama chain TVL"
   },
   "tvl_yoy_pct": {
-   "value": 13.574182,
+   "value": 30.932456,
    "unit": "%",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_chain_tvl",
    "how": "TVL now vs 365d earlier"
   },
   "llama_fees_usd_30d": {
-   "value": 180983.0,
+   "value": 179384.0,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_fees",
    "how": "DefiLlama chain gas fees, 30d sum"
   },
   "llama_fees_usd_30d_yoy_pct": {
-   "value": -24.706494,
+   "value": -24.313423,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_fees",
    "how": "30d sum vs same window a year earlier"
   },
   "llama_fees_usd_1y": {
-   "value": 1202380,
+   "value": 1198944,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_fees",
    "how": "DefiLlama total1y field"
   },
   "llama_revenue_usd_30d": {
-   "value": 126686.0,
+   "value": 125567.0,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_revenue",
    "how": "DefiLlama burned share of fees, 30d sum"
   },
   "llama_revenue_usd_30d_yoy_pct": {
-   "value": -24.707742,
+   "value": -24.314371,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_revenue",
    "how": "30d sum vs same window a year earlier"
   },
   "llama_revenue_usd_1y": {
-   "value": 842261,
+   "value": 839856,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_chain_revenue",
    "how": "DefiLlama total1y field"
   },
   "stablecoin_supply_usd": {
-   "value": 127972823.49,
+   "value": 128753030.6,
    "unit": "USD",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_stablecoins",
    "how": "DefiLlama totalCirculatingUSD.peggedUSD on NEAR"
   },
   "stablecoin_supply_30d_change_pct": {
-   "value": 23.415078,
+   "value": 24.164274,
    "unit": "%",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_stablecoins",
    "how": "stablecoin supply vs 30d earlier"
   },
   "stablecoin_supply_365d_change_pct": {
-   "value": -43.701324,
+   "value": -45.461533,
    "unit": "%",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_stablecoins",
    "how": "stablecoin supply vs 365d earlier"
   },
@@ -282,93 +282,93 @@
    "how": "NEAR's rank by USD-pegged stablecoin supply among 210 chains"
   },
   "dex_volume_near_30d": {
-   "value": 4453428252.93,
+   "value": 4440390618.63,
    "unit": "USD",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "llama_chain_dex",
    "how": "DefiLlama DEX volume attributed to NEAR chain, 30d sum (includes NEAR Intents)"
   },
   "intents_volume_30d": {
-   "value": "3897049479",
+   "value": "3970607022",
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "DefiLlama NEAR Intents volume, 30d sum"
   },
   "intents_volume_30d_mom_pct": {
-   "value": -16.81586,
+   "value": -12.538208,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "30d sum vs previous 30d"
   },
   "intents_volume_30d_yoy_pct": {
-   "value": 128.472653,
+   "value": 125.548222,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "30d sum vs same window a year earlier"
   },
   "intents_volume_1y": {
-   "value": 32910221548,
+   "value": 32948150063,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "DefiLlama total1y"
   },
   "intents_volume_all_time": {
-   "value": 36248638250,
+   "value": 36386550029,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "DefiLlama totalAllTime"
   },
   "intents_first_day": {
    "value": "2024-12-10",
    "unit": "date",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_volume",
    "how": "first day with volume in DefiLlama series"
   },
   "intents_fees_30d": {
-   "value": 6008624.0,
+   "value": 5777689.0,
    "unit": "USD",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama_intents_fees",
    "how": "DefiLlama NEAR Intents fees, 30d sum"
   },
   "intents_share_of_near_dex_pct": {
-   "value": 87.506731,
+   "value": 89.420219,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "llama",
    "how": "Intents 30d volume / all NEAR-chain DEX 30d volume"
   },
   "near_price_usd": {
-   "value": 3.827789,
+   "value": 4.091421,
    "unit": "USD",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "price_history (CoinGecko)",
    "how": "last daily close"
   },
   "near_price_365d_change_pct": {
-   "value": 100.44402,
+   "value": 123.103847,
    "unit": "%",
-   "as_of": "2026-11-03",
+   "as_of": "2026-11-04",
    "source": "price_history (CoinGecko)",
    "how": "price now vs ~365d earlier (nearest point within 3 days)"
   },
   "price_crosscheck_nearblocks_diff_pct": {
-   "value": 0.057764,
+   "value": -0.034726,
    "unit": "%",
    "as_of": "latest",
    "source": "nearblocks_stats vs price_history (CoinGecko)",
    "how": "NearBlocks spot price vs primary price source (data-quality check)"
   },
   "fees_crosscheck_diff_pct": {
-   "value": -1.382126,
+   "value": -1.334682,
    "unit": "%",
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "source": "nearblocks_charts vs llama_chain_fees",
    "how": "NearBlocks 30d fee USD vs DefiLlama 30d fee USD (independent indexers; data-quality check)"
   },
