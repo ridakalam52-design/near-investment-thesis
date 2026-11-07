@@ -4,7 +4,7 @@
 > fetched itself (NEAR RPC, NearBlocks, DefiLlama, CoinGecko). Placeholders whose source failed print
 > `n/a (source failed)` instead of a number. Edit the prose in `templates/THESIS.template.md`, never the numbers.
 >
-> Generated: 2026-11-06T10:53:00+00:00 UTC · Signals right now: **3 bull / 9 bear / 0 unknown** (of 12).
+> Generated: 2026-11-07T10:08:04+00:00 UTC · Signals right now: **3 bull / 9 bear / 0 unknown** (of 12).
 
 ## 1. The claim
 
@@ -24,60 +24,60 @@ holders with ~2.5% dilution and nothing to offset it.
 
 | What | Value | As of (UTC) |
 |---|---|---|
-| NEAR price (CoinGecko) | $3.748 (+78.9% over 365d) | 2026-11-06 |
-| NEAR Intents volume, last 30d | $4.00B (+101.9% YoY, -11.9% vs prior 30d) | DefiLlama |
-| NEAR Intents volume, last 365d / all time | $32.92B / $36.66B (series starts 2024-12-10) | DefiLlama |
+| NEAR price (CoinGecko) | $3.703 (+33.2% over 365d) | 2026-11-07 |
+| NEAR Intents volume, last 30d | $4.02B (+92.1% YoY, -11.6% vs prior 30d) | DefiLlama |
+| NEAR Intents volume, last 365d / all time | $32.91B / $36.80B (series starts 2024-12-10) | DefiLlama |
 | NEAR Intents fees, last 30d | $5.9M | DefiLlama |
-| Intents share of all DEX volume attributed to NEAR | 90.1% | DefiLlama |
-| Transactions/day (30d avg) | 682,915 (-84.9% YoY) | NearBlocks |
-| Active accounts/day (30d avg) | 60,105 (-77.6% YoY) | NearBlocks |
-| New accounts/day (30d avg) | 9,778 (-95.8% YoY) | NearBlocks |
-| Gas fees, last 30d | 35,987 NEAR ≈ $174,510 (-63.9% YoY in NEAR) | NearBlocks |
-| Gas fees, last 30d (independent check) | $176,651 (NearBlocks differs by -1.2%) | DefiLlama |
-| Annualized burn (70% of fees) | 306,488 NEAR | NearBlocks |
-| Max annual issuance (2.5% of supply) | 32,774,021 NEAR | NEAR RPC |
+| Intents share of all DEX volume attributed to NEAR | 93.7% | DefiLlama |
+| Transactions/day (30d avg) | 674,462 (-85.0% YoY) | NearBlocks |
+| Active accounts/day (30d avg) | 56,865 (-78.7% YoY) | NearBlocks |
+| New accounts/day (30d avg) | 9,704 (-95.8% YoY) | NearBlocks |
+| Gas fees, last 30d | 35,821 NEAR ≈ $172,457 (-64.0% YoY in NEAR) | NearBlocks |
+| Gas fees, last 30d (independent check) | $174,374 (NearBlocks differs by -1.1%) | DefiLlama |
+| Annualized burn (70% of fees) | 305,075 NEAR | NearBlocks |
+| Max annual issuance (2.5% of supply) | 32,776,577 NEAR | NEAR RPC |
 | Burn as % of issuance | 0.9% | derived |
-| Realized net supply growth, last 365d | 2.5% (31,723,657 NEAR) | NearBlocks |
-| Total supply | 1,310,960,831 NEAR at block 223,306,161 | NEAR RPC |
-| Staked / staking ratio / validators | 582,595,128 NEAR / 44.4% / 337 | NEAR RPC |
+| Realized net supply growth, last 365d | 2.5% (31,723,107 NEAR) | NearBlocks |
+| Total supply | 1,311,063,061 NEAR at block 223,451,699 | NEAR RPC |
+| Staked / staking ratio / validators | 581,901,262 NEAR / 44.4% / 338 | NEAR RPC |
 | Gross staking APR (before commission) | 5.6% | derived |
-| Stablecoins on NEAR | $129.7M (+1.3% 30d, -41.5% YoY, rank #28) | DefiLlama |
-| DeFi TVL | $175.7M (+18.7% YoY, USD) | DefiLlama |
+| Stablecoins on NEAR | $130.5M (-1.2% 30d, -22.9% YoY, rank #28) | DefiLlama |
+| DeFi TVL | $177.4M (+12.7% YoY, USD) | DefiLlama |
 
 Full metric table with the exact computation of each number is in section 8.
 
 ## 3. Bull case
 
-1. **Intents volume.** NEAR Intents settled $32.92B over the last year and
-   $4.00B in the last 30 days (+101.9% vs the same window a year ago).
-   It is now 90.1% of all DEX volume DefiLlama attributes to NEAR — the product, not
+1. **Intents volume.** NEAR Intents settled $32.91B over the last year and
+   $4.02B in the last 30 days (+92.1% vs the same window a year ago).
+   It is now 93.7% of all DEX volume DefiLlama attributes to NEAR — the product, not
    the L1's own DeFi, is where the volume is.
-2. **Intents earns fees.** $5.9M of Intents fees in 30 days vs $176,651 of L1 gas fees
-   (33.4× L1 gas). If even part of that value
+2. **Intents earns fees.** $5.9M of Intents fees in 30 days vs $174,374 of L1 gas fees
+   (33.8× L1 gas). If even part of that value
    is routed back to NEAR (fees, staking demand, token-denominated settlement), the token's value capture changes.
-3. **Security budget.** 44.4% of supply is staked across 337 validators;
+3. **Security budget.** 44.4% of supply is staked across 338 validators;
    stakers earn ~5.1% nominal after an assumed 10.0% commission, i.e. a positive real
    yield of ~2.5% after dilution.
 4. **Inflation is capped on-chain.** `max_inflation_rate` reads 2.5% straight
    from protocol config; realized net supply growth was 2.5% over the last year.
-5. **Short-term liquidity.** Stablecoin supply moved +1.3% in 30 days;
-   TVL is +18.7% YoY.
+5. **Short-term liquidity.** Stablecoin supply moved -1.2% in 30 days;
+   TVL is +12.7% YoY.
 
 ## 4. Bear case
 
-1. **Raw L1 usage versus a year ago.** Transactions/day are -84.9% YoY and active accounts
-   -77.6% YoY; new accounts -95.8%. Whatever drove
+1. **Raw L1 usage versus a year ago.** Transactions/day are -85.0% YoY and active accounts
+   -78.7% YoY; new accounts -95.8%. Whatever drove
    last year's counts is what a re-run should explain before calling usage "growing".
 2. **Fee burn versus issuance.** Burn offsets 0.9% of issuance. At today's
-   fee per transaction (0.001757 NEAR) the chain would need ~73,007,430 tx/day —
-   106.9× today — to stop net inflation. That is a 154.6%/yr growth rate for 5 years.
+   fee per transaction (0.001770 NEAR) the chain would need ~72,476,868 tx/day —
+   107.5× today — to stop net inflation. That is a 154.8%/yr growth rate for 5 years.
    Holders who don't stake are diluted ~2.5%/yr.
 3. **Intents value does not obviously accrue to the NEAR token.** Intents fees ($5.9M/30d) are
-   not NEAR gas; L1 gas fees moved -23.1% YoY in USD (DefiLlama) and -63.9%
+   not NEAR gas; L1 gas fees moved -23.0% YoY in USD (DefiLlama) and -64.0%
    in NEAR terms, even while Intents volume rose. The value-capture link is the weakest part of the thesis.
-4. **Stablecoin base versus a year ago.** $129.7M on NEAR, -41.5%
+4. **Stablecoin base versus a year ago.** $130.5M on NEAR, -22.9%
    YoY, rank #28 among chains — small for a chain pitching itself as a settlement layer.
-5. **Intents momentum is not one-way.** The last 30 days were -11.9% vs the 30 days before.
+5. **Intents momentum is not one-way.** The last 30 days were -11.6% vs the 30 days before.
 
 ## 5. Hypothesis test: does Intents volume lead usage better than price?
 
@@ -118,36 +118,36 @@ max inflation actually minted) is calibrated from the realized supply change: **
 
 | Scenario | Year | Tx/day | Issuance | Burn | Burn/issuance | Net inflation | Staker APR (nominal) | Staker real yield |
 |---|---|---|---|---|---|---|---|---|
-| bear | 0 | 682,915 | 32.77M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
-| bear | 1 | 512,186 | 33.59M NEAR | 0.23M NEAR | 0.7% | 2.5% | 5.3% | 2.8% |
-| bear | 3 | 288,105 | 35.28M NEAR | 0.13M NEAR | 0.4% | 2.5% | 5.9% | 3.3% |
-| bear | 5 | 162,059 | 37.06M NEAR | 0.07M NEAR | 0.2% | 2.5% | 6.5% | 3.9% |
-| base | 0 | 682,915 | 32.77M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
-| base | 1 | 853,644 | 33.59M NEAR | 0.38M NEAR | 1.1% | 2.5% | 5.1% | 2.5% |
-| base | 3 | 1,333,819 | 35.26M NEAR | 0.60M NEAR | 1.7% | 2.5% | 5.1% | 2.5% |
-| base | 5 | 2,084,092 | 37.02M NEAR | 0.94M NEAR | 2.5% | 2.4% | 5.1% | 2.6% |
-| bull | 0 | 682,915 | 32.77M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
-| bull | 1 | 1,365,831 | 33.59M NEAR | 0.61M NEAR | 1.8% | 2.5% | 5.0% | 2.4% |
-| bull | 3 | 5,463,322 | 35.24M NEAR | 2.45M NEAR | 7.0% | 2.3% | 4.7% | 2.4% |
-| bull | 5 | 21,853,290 | 36.84M NEAR | 9.81M NEAR | 26.6% | 1.8% | 4.6% | 2.7% |
+| bear | 0 | 674,462 | 32.78M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
+| bear | 1 | 505,847 | 33.59M NEAR | 0.23M NEAR | 0.7% | 2.5% | 5.3% | 2.8% |
+| bear | 3 | 284,539 | 35.28M NEAR | 0.13M NEAR | 0.4% | 2.5% | 5.9% | 3.3% |
+| bear | 5 | 160,053 | 37.06M NEAR | 0.07M NEAR | 0.2% | 2.5% | 6.5% | 4.0% |
+| base | 0 | 674,462 | 32.78M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
+| base | 1 | 843,078 | 33.59M NEAR | 0.38M NEAR | 1.1% | 2.5% | 5.1% | 2.5% |
+| base | 3 | 1,317,310 | 35.27M NEAR | 0.60M NEAR | 1.7% | 2.5% | 5.1% | 2.5% |
+| base | 5 | 2,058,296 | 37.02M NEAR | 0.93M NEAR | 2.5% | 2.4% | 5.1% | 2.6% |
+| bull | 0 | 674,462 | 32.78M NEAR | 0.31M NEAR | 0.9% | 2.5% | 5.1% | 2.5% |
+| bull | 1 | 1,348,925 | 33.59M NEAR | 0.61M NEAR | 1.8% | 2.5% | 5.0% | 2.4% |
+| bull | 3 | 5,395,700 | 35.24M NEAR | 2.44M NEAR | 6.9% | 2.3% | 4.7% | 2.4% |
+| bull | 5 | 21,582,800 | 36.84M NEAR | 9.76M NEAR | 26.5% | 1.8% | 4.6% | 2.7% |
 
 After 5 years: net inflation bear 2.5% / base 2.4% /
 bull 1.8%; burn covers bear 0.2% / base 2.5% /
-bull 26.6% of issuance. Even the bull case (100.0%/yr tx growth at flat fee
+bull 26.5% of issuance. Even the bull case (100.0%/yr tx growth at flat fee
 per tx) still leaves net inflation above zero - **on these numbers the token's case cannot rest on burn**; it rests on staking yield and on Intents value capture.
 
 ## 7. Falsifiable signals — what would change my mind
 
 | Signal | Metric | Value | Bull if | Status | As of |
 |---|---|---|---|---|---|
-| NEAR Intents 30d volume is higher than a year ago | `intents_volume_30d_yoy_pct` | 102 | > 0.000 | **BULL** | 2026-11-05 |
-| NEAR Intents 30d volume is growing month over month | `intents_volume_30d_mom_pct` | -12 | > 0.000 | **BEAR** | 2026-11-05 |
-| Daily active accounts (30d avg) higher than a year ago | `active_accounts_30d_avg_yoy_pct` | -78 | > 0.000 | **BEAR** | 2026-11-05 |
-| Daily transactions (30d avg) higher than a year ago | `txns_30d_avg_yoy_pct` | -85 | > 0.000 | **BEAR** | 2026-11-05 |
-| Gas fees (NEAR-denominated, 30d) higher than a year ago | `fees_near_30d_yoy_pct` | -64 | > 0.000 | **BEAR** | 2026-11-05 |
-| Fee burn offsets at least 10% of max issuance | `burn_to_issuance_pct` | 0.935 | > 10.000 | **BEAR** | 2026-11-05 |
-| Stablecoin supply on NEAR higher than a year ago | `stablecoin_supply_365d_change_pct` | -42 | > 0.000 | **BEAR** | 2026-11-06 |
-| DeFi TVL on NEAR higher than a year ago (USD, price-sensitive) | `tvl_yoy_pct` | 19 | > 0.000 | **BULL** | 2026-11-06 |
+| NEAR Intents 30d volume is higher than a year ago | `intents_volume_30d_yoy_pct` | 92 | > 0.000 | **BULL** | 2026-11-06 |
+| NEAR Intents 30d volume is growing month over month | `intents_volume_30d_mom_pct` | -12 | > 0.000 | **BEAR** | 2026-11-06 |
+| Daily active accounts (30d avg) higher than a year ago | `active_accounts_30d_avg_yoy_pct` | -79 | > 0.000 | **BEAR** | 2026-11-06 |
+| Daily transactions (30d avg) higher than a year ago | `txns_30d_avg_yoy_pct` | -85 | > 0.000 | **BEAR** | 2026-11-06 |
+| Gas fees (NEAR-denominated, 30d) higher than a year ago | `fees_near_30d_yoy_pct` | -64 | > 0.000 | **BEAR** | 2026-11-06 |
+| Fee burn offsets at least 10% of max issuance | `burn_to_issuance_pct` | 0.931 | > 10.000 | **BEAR** | 2026-11-06 |
+| Stablecoin supply on NEAR higher than a year ago | `stablecoin_supply_365d_change_pct` | -23 | > 0.000 | **BEAR** | 2026-11-07 |
+| DeFi TVL on NEAR higher than a year ago (USD, price-sensitive) | `tvl_yoy_pct` | 13 | > 0.000 | **BULL** | 2026-11-07 |
 | At least 40% of supply is staked | `staking_ratio_pct` | 44 | > 40.000 | **BULL** | latest |
 | Weekly Intents volume changes lead on-chain usage changes by 1-4 weeks (corr above noise) | `hyp_intents_lead_corr` | 0.015 | > 0.201 | **BEAR** | 2026-11-01 |
 | Intents volume is a better leading indicator of usage than NEAR price | `hyp_intents_minus_price_lead_corr` | -0.005 | > 0.000 | **BEAR** | 2026-11-01 |
@@ -167,59 +167,59 @@ lead-lag correlation rises above the noise band.
 
 | Metric | Value | Unit | As of (UTC) | Source | How |
 |---|---|---|---|---|---|
-| `txns_30d_avg` | 682,915 | transactions/day | 2026-11-05 | nearblocks_charts | mean of daily `txns` over the 30 days to as_of |
-| `txns_30d_avg_yoy_pct` | -85 | % | 2026-11-05 | nearblocks_charts | 30d mean of `txns` vs the same 30d window one year earlier |
-| `active_accounts_30d_avg` | 60,105 | active accounts/day | 2026-11-05 | nearblocks_charts | mean of daily `active_accounts` over the 30 days to as_of |
-| `active_accounts_30d_avg_yoy_pct` | -78 | % | 2026-11-05 | nearblocks_charts | 30d mean of `active_accounts` vs the same 30d window one year earlier |
-| `new_accounts_30d_avg` | 9,778 | new accounts/day | 2026-11-05 | nearblocks_charts | mean of daily `new_accounts` over the 30 days to as_of |
-| `new_accounts_30d_avg_yoy_pct` | -96 | % | 2026-11-05 | nearblocks_charts | 30d mean of `new_accounts` vs the same 30d window one year earlier |
-| `fees_near_30d` | 35,987 | NEAR | 2026-11-05 | nearblocks_charts | sum of daily `txn_fee` (yoctoNEAR/1e24) over 30 days |
-| `fees_near_30d_yoy_pct` | -64 | % | 2026-11-05 | nearblocks_charts | 30d fee sum vs same window a year earlier |
-| `fees_usd_30d_nearblocks` | 174,510 | USD | 2026-11-05 | nearblocks_charts | sum of daily `txn_fee_usd` over 30 days |
-| `fees_near_annualized` | 437,839 | NEAR/yr | 2026-11-05 | nearblocks_charts | 30d fee sum x 365/30 |
-| `burn_near_annualized` | 306,488 | NEAR/yr | 2026-11-05 | nearblocks_charts | annualized fees x burn share 0.7 (NEAR burns 70% of gas; 30% goes to contract devs) |
-| `fee_per_tx_near` | 0.002 | NEAR/tx | 2026-11-05 | nearblocks_charts | 30d fee sum / 30d tx sum |
-| `supply_net_change_365d` | 31,723,657 | NEAR | 2026-11-05 | nearblocks_charts | total_supply(as_of) - total_supply(as_of - 365d) |
-| `realized_net_inflation_365d_pct` | 2.480 | % | 2026-11-05 | nearblocks_charts | net 365d supply change / supply a year ago (already net of burn) |
-| `burn_near_365d` | 424,283 | NEAR | 2026-11-05 | nearblocks_charts | 365d fee sum x 0.7 |
-| `implied_gross_issuance_365d` | 32,147,940 | NEAR | 2026-11-05 | nearblocks_charts | net supply change + burn = what validators were minted |
-| `total_supply_rpc` | 1,310,960,831 | NEAR | 2026-11-06 | rpc_block | block 223306161 header.total_supply |
-| `block_height` | 223,306,161 | block | 2026-11-06 | rpc_block | latest final block |
+| `txns_30d_avg` | 674,462 | transactions/day | 2026-11-06 | nearblocks_charts | mean of daily `txns` over the 30 days to as_of |
+| `txns_30d_avg_yoy_pct` | -85 | % | 2026-11-06 | nearblocks_charts | 30d mean of `txns` vs the same 30d window one year earlier |
+| `active_accounts_30d_avg` | 56,865 | active accounts/day | 2026-11-06 | nearblocks_charts | mean of daily `active_accounts` over the 30 days to as_of |
+| `active_accounts_30d_avg_yoy_pct` | -79 | % | 2026-11-06 | nearblocks_charts | 30d mean of `active_accounts` vs the same 30d window one year earlier |
+| `new_accounts_30d_avg` | 9,704 | new accounts/day | 2026-11-06 | nearblocks_charts | mean of daily `new_accounts` over the 30 days to as_of |
+| `new_accounts_30d_avg_yoy_pct` | -96 | % | 2026-11-06 | nearblocks_charts | 30d mean of `new_accounts` vs the same 30d window one year earlier |
+| `fees_near_30d` | 35,821 | NEAR | 2026-11-06 | nearblocks_charts | sum of daily `txn_fee` (yoctoNEAR/1e24) over 30 days |
+| `fees_near_30d_yoy_pct` | -64 | % | 2026-11-06 | nearblocks_charts | 30d fee sum vs same window a year earlier |
+| `fees_usd_30d_nearblocks` | 172,457 | USD | 2026-11-06 | nearblocks_charts | sum of daily `txn_fee_usd` over 30 days |
+| `fees_near_annualized` | 435,821 | NEAR/yr | 2026-11-06 | nearblocks_charts | 30d fee sum x 365/30 |
+| `burn_near_annualized` | 305,075 | NEAR/yr | 2026-11-06 | nearblocks_charts | annualized fees x burn share 0.7 (NEAR burns 70% of gas; 30% goes to contract devs) |
+| `fee_per_tx_near` | 0.002 | NEAR/tx | 2026-11-06 | nearblocks_charts | 30d fee sum / 30d tx sum |
+| `supply_net_change_365d` | 31,723,107 | NEAR | 2026-11-06 | nearblocks_charts | total_supply(as_of) - total_supply(as_of - 365d) |
+| `realized_net_inflation_365d_pct` | 2.480 | % | 2026-11-06 | nearblocks_charts | net 365d supply change / supply a year ago (already net of burn) |
+| `burn_near_365d` | 422,691 | NEAR | 2026-11-06 | nearblocks_charts | 365d fee sum x 0.7 |
+| `implied_gross_issuance_365d` | 32,145,798 | NEAR | 2026-11-06 | nearblocks_charts | net supply change + burn = what validators were minted |
+| `total_supply_rpc` | 1,311,063,061 | NEAR | 2026-11-07 | rpc_block | block 223451699 header.total_supply |
+| `block_height` | 223,451,699 | block | 2026-11-07 | rpc_block | latest final block |
 | `max_inflation_rate_pct` | 2.500 | %/yr | latest | rpc_protocol_config | EXPERIMENTAL_protocol_config.max_inflation_rate |
 | `protocol_reward_rate_pct` | 0.000 | % | latest | rpc_protocol_config | share of issuance sent to treasury (protocol_reward_rate) |
-| `protocol_version` | 87 |  | latest | rpc_protocol_config | protocol_version |
-| `total_staked` | 582,595,128 | NEAR | latest | rpc_validators | sum of current_validators[].stake |
-| `validator_count` | 337 | validators | latest | rpc_validators | len(current_validators) |
+| `protocol_version` | 88 |  | latest | rpc_protocol_config | protocol_version |
+| `total_staked` | 581,901,262 | NEAR | latest | rpc_validators | sum of current_validators[].stake |
+| `validator_count` | 338 | validators | latest | rpc_validators | len(current_validators) |
 | `staking_ratio_pct` | 44 | % | latest | rpc_validators+rpc_block | total_staked / total_supply |
-| `max_gross_issuance_annual` | 32,774,021 | NEAR/yr | latest | rpc_protocol_config+rpc_block | total_supply x max_inflation_rate (upper bound; actual scales with validator uptime) |
-| `staking_apr_gross_pct` | 5.626 | % | latest | rpc | issuance x (1 - protocol_reward_rate) / total_staked, before validator commission |
-| `burn_to_issuance_pct` | 0.935 | % | 2026-11-05 | nearblocks_charts+rpc | annualized 30d burn / max gross issuance |
-| `breakeven_tx_per_day` | 73,007,430 | tx/day | latest | nearblocks_charts+rpc | tx/day needed for burn = issuance at today's fee per tx |
-| `tvl_usd` | 175650059 | USD | 2026-11-06 | llama_chain_tvl | latest DefiLlama chain TVL |
-| `tvl_yoy_pct` | 19 | % | 2026-11-06 | llama_chain_tvl | TVL now vs 365d earlier |
-| `llama_fees_usd_30d` | 176,651 | USD | 2026-11-05 | llama_chain_fees | DefiLlama chain gas fees, 30d sum |
-| `llama_fees_usd_30d_yoy_pct` | -23 | % | 2026-11-05 | llama_chain_fees | 30d sum vs same window a year earlier |
-| `llama_fees_usd_1y` | 1,193,992 | USD | 2026-11-05 | llama_chain_fees | DefiLlama total1y field |
-| `llama_revenue_usd_30d` | 123,655 | USD | 2026-11-05 | llama_chain_revenue | DefiLlama burned share of fees, 30d sum |
-| `llama_revenue_usd_30d_yoy_pct` | -23 | % | 2026-11-05 | llama_chain_revenue | 30d sum vs same window a year earlier |
-| `llama_revenue_usd_1y` | 836,390 | USD | 2026-11-05 | llama_chain_revenue | DefiLlama total1y field |
-| `stablecoin_supply_usd` | 129,700,278 | USD | 2026-11-06 | llama_stablecoins | DefiLlama totalCirculatingUSD.peggedUSD on NEAR |
-| `stablecoin_supply_30d_change_pct` | 1.333 | % | 2026-11-06 | llama_stablecoins | stablecoin supply vs 30d earlier |
-| `stablecoin_supply_365d_change_pct` | -42 | % | 2026-11-06 | llama_stablecoins | stablecoin supply vs 365d earlier |
-| `stablecoin_chain_rank` | 28 | rank | latest | llama_stablecoin_chains | NEAR's rank by USD-pegged stablecoin supply among 210 chains |
-| `dex_volume_near_30d` | 4,441,551,381 | USD | 2026-11-06 | llama_chain_dex | DefiLlama DEX volume attributed to NEAR chain, 30d sum (includes NEAR Intents) |
-| `intents_volume_30d` | 4002196892 | USD | 2026-11-05 | llama_intents_volume | DefiLlama NEAR Intents volume, 30d sum |
-| `intents_volume_30d_mom_pct` | -12 | % | 2026-11-05 | llama_intents_volume | 30d sum vs previous 30d |
-| `intents_volume_30d_yoy_pct` | 102 | % | 2026-11-05 | llama_intents_volume | 30d sum vs same window a year earlier |
-| `intents_volume_1y` | 32,920,557,563 | USD | 2026-11-05 | llama_intents_volume | DefiLlama total1y |
-| `intents_volume_all_time` | 36,661,551,694 | USD | 2026-11-05 | llama_intents_volume | DefiLlama totalAllTime |
-| `intents_first_day` | 2024-12-10 | date | 2026-11-05 | llama_intents_volume | first day with volume in DefiLlama series |
-| `intents_fees_30d` | 5,908,248 | USD | 2026-11-05 | llama_intents_fees | DefiLlama NEAR Intents fees, 30d sum |
-| `intents_share_of_near_dex_pct` | 90 | % | 2026-11-05 | llama | Intents 30d volume / all NEAR-chain DEX 30d volume |
-| `near_price_usd` | 3.748 | USD | 2026-11-06 | price_history (CoinGecko) | last daily close |
-| `near_price_365d_change_pct` | 79 | % | 2026-11-06 | price_history (CoinGecko) | price now vs ~365d earlier (nearest point within 3 days) |
-| `price_crosscheck_nearblocks_diff_pct` | 0.062 | % | latest | nearblocks_stats vs price_history (CoinGecko) | NearBlocks spot price vs primary price source (data-quality check) |
-| `fees_crosscheck_diff_pct` | -1.212 | % | 2026-11-05 | nearblocks_charts vs llama_chain_fees | NearBlocks 30d fee USD vs DefiLlama 30d fee USD (independent indexers; data-quality check) |
+| `max_gross_issuance_annual` | 32,776,577 | NEAR/yr | latest | rpc_protocol_config+rpc_block | total_supply x max_inflation_rate (upper bound; actual scales with validator uptime) |
+| `staking_apr_gross_pct` | 5.633 | % | latest | rpc | issuance x (1 - protocol_reward_rate) / total_staked, before validator commission |
+| `burn_to_issuance_pct` | 0.931 | % | 2026-11-06 | nearblocks_charts+rpc | annualized 30d burn / max gross issuance |
+| `breakeven_tx_per_day` | 72,476,868 | tx/day | latest | nearblocks_charts+rpc | tx/day needed for burn = issuance at today's fee per tx |
+| `tvl_usd` | 177372159 | USD | 2026-11-07 | llama_chain_tvl | latest DefiLlama chain TVL |
+| `tvl_yoy_pct` | 13 | % | 2026-11-07 | llama_chain_tvl | TVL now vs 365d earlier |
+| `llama_fees_usd_30d` | 174,374 | USD | 2026-11-06 | llama_chain_fees | DefiLlama chain gas fees, 30d sum |
+| `llama_fees_usd_30d_yoy_pct` | -23 | % | 2026-11-06 | llama_chain_fees | 30d sum vs same window a year earlier |
+| `llama_fees_usd_1y` | 1,190,638 | USD | 2026-11-06 | llama_chain_fees | DefiLlama total1y field |
+| `llama_revenue_usd_30d` | 122,062 | USD | 2026-11-06 | llama_chain_revenue | DefiLlama burned share of fees, 30d sum |
+| `llama_revenue_usd_30d_yoy_pct` | -23 | % | 2026-11-06 | llama_chain_revenue | 30d sum vs same window a year earlier |
+| `llama_revenue_usd_1y` | 834,043 | USD | 2026-11-06 | llama_chain_revenue | DefiLlama total1y field |
+| `stablecoin_supply_usd` | 130,521,617 | USD | 2026-11-07 | llama_stablecoins | DefiLlama totalCirculatingUSD.peggedUSD on NEAR |
+| `stablecoin_supply_30d_change_pct` | -1.162 | % | 2026-11-07 | llama_stablecoins | stablecoin supply vs 30d earlier |
+| `stablecoin_supply_365d_change_pct` | -23 | % | 2026-11-07 | llama_stablecoins | stablecoin supply vs 365d earlier |
+| `stablecoin_chain_rank` | 28 | rank | latest | llama_stablecoin_chains | NEAR's rank by USD-pegged stablecoin supply among 214 chains |
+| `dex_volume_near_30d` | 4,293,651,324 | USD | 2026-11-07 | llama_chain_dex | DefiLlama DEX volume attributed to NEAR chain, 30d sum (includes NEAR Intents) |
+| `intents_volume_30d` | 4024044605 | USD | 2026-11-06 | llama_intents_volume | DefiLlama NEAR Intents volume, 30d sum |
+| `intents_volume_30d_mom_pct` | -12 | % | 2026-11-06 | llama_intents_volume | 30d sum vs previous 30d |
+| `intents_volume_30d_yoy_pct` | 92 | % | 2026-11-06 | llama_intents_volume | 30d sum vs same window a year earlier |
+| `intents_volume_1y` | 32,906,266,180 | USD | 2026-11-06 | llama_intents_volume | DefiLlama total1y |
+| `intents_volume_all_time` | 36,803,107,665 | USD | 2026-11-06 | llama_intents_volume | DefiLlama totalAllTime |
+| `intents_first_day` | 2024-12-10 | date | 2026-11-06 | llama_intents_volume | first day with volume in DefiLlama series |
+| `intents_fees_30d` | 5,899,994 | USD | 2026-11-06 | llama_intents_fees | DefiLlama NEAR Intents fees, 30d sum |
+| `intents_share_of_near_dex_pct` | 94 | % | 2026-11-06 | llama | Intents 30d volume / all NEAR-chain DEX 30d volume |
+| `near_price_usd` | 3.703 | USD | 2026-11-07 | price_history (CoinGecko) | last daily close |
+| `near_price_365d_change_pct` | 33 | % | 2026-11-07 | price_history (CoinGecko) | price now vs ~365d earlier (nearest point within 3 days) |
+| `price_crosscheck_nearblocks_diff_pct` | -0.083 | % | latest | nearblocks_stats vs price_history (CoinGecko) | NearBlocks spot price vs primary price source (data-quality check) |
+| `fees_crosscheck_diff_pct` | -1.099 | % | 2026-11-06 | nearblocks_charts vs llama_chain_fees | NearBlocks 30d fee USD vs DefiLlama 30d fee USD (independent indexers; data-quality check) |
 | `hyp_intents_lead_corr` | 0.015 | corr | 2026-11-01 | derived (hypothesis test) | mean corr of weekly dlog Intents volume vs usage 1-4w later, 2025-01-12..2026-11-01 |
 | `hyp_price_lead_corr` | 0.020 | corr | 2026-11-01 | derived (hypothesis test) | mean corr of weekly dlog NEAR price vs usage 1-4w later, 2025-01-12..2026-11-01 |
 | `hyp_intents_minus_price_lead_corr` | -0.005 | corr | 2026-11-01 | derived (hypothesis test) | Intents lead corr minus price lead corr |
@@ -236,7 +236,7 @@ lead-lag correlation rises above the noise band.
   public daily charts are used instead; their definition of "transaction" and "active account" is NearBlocks'.
 - **Validator commission** is an assumption (`assumptions.yaml`), not fetched.
 - **CoinGecko free tier** returns at most 365 days; the multi-year price line and the lead-lag test use
-  NearBlocks' daily `near_price` (cross-checked against the primary price source, CoinGecko: +0.1% difference today). If CoinGecko rate-limits, the build falls back to DefiLlama's coins API and says so in the source table.
+  NearBlocks' daily `near_price` (cross-checked against the primary price source, CoinGecko: -0.1% difference today). If CoinGecko rate-limits, the build falls back to DefiLlama's coins API and says so in the source table.
 - Correlation is not causation; weekly data over < 2 years is a small sample.
 - This is research, not financial advice.
 
@@ -244,18 +244,18 @@ lead-lag correlation rises above the noise band.
 
 | Source | Endpoint | Status | Fetched (UTC) |
 |---|---|---|---|
-| rpc_block | https://rpc.mainnet.near.org | ok | 2026-11-06T10:52:43+00:00 |
-| rpc_validators | https://rpc.mainnet.near.org | ok | 2026-11-06T10:52:43+00:00 |
-| rpc_protocol_config | https://rpc.mainnet.near.org | ok | 2026-11-06T10:52:43+00:00 |
-| nearblocks_charts | https://api.nearblocks.io/v1/charts | ok | 2026-11-06T10:52:43+00:00 |
-| nearblocks_stats | https://api.nearblocks.io/v1/stats | ok | 2026-11-06T10:52:43+00:00 |
-| llama_chain_tvl | https://api.llama.fi/v2/historicalChainTvl/Near | ok | 2026-11-06T10:52:43+00:00 |
-| llama_chain_fees | https://api.llama.fi/summary/fees/near?dataType=dailyFees | ok | 2026-11-06T10:52:43+00:00 |
-| llama_chain_revenue | https://api.llama.fi/summary/fees/near?dataType=dailyRevenue | ok | 2026-11-06T10:52:43+00:00 |
-| llama_stablecoins | https://stablecoins.llama.fi/stablecoincharts/Near | ok | 2026-11-06T10:52:43+00:00 |
-| llama_stablecoin_chains | https://stablecoins.llama.fi/stablecoinchains | ok | 2026-11-06T10:52:43+00:00 |
-| llama_chain_dex | https://api.llama.fi/overview/dexs/near | ok | 2026-11-06T10:52:43+00:00 |
-| llama_intents_volume | https://api.llama.fi/summary/dexs/near-intents | ok | 2026-11-06T10:52:43+00:00 |
-| llama_intents_fees | https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees | ok | 2026-11-06T10:52:43+00:00 |
-| price_history | https://api.coingecko.com/api/v3/coins/near/market_chart?vs_currency=usd&days=365&interval=daily | ok | 2026-11-06T10:52:43+00:00 |
-| intents_explorer | https://explorer.near-intents.org/api/v0/transactions | failed: HTTP 400: {"code":"Bad Request","error":{"code":"MISSING_TOKEN","message":"Missing authorization header"}} | 2026-11-06T10:52:43+00:00 |
+| rpc_block | https://rpc.mainnet.near.org | ok | 2026-11-07T10:07:46+00:00 |
+| rpc_validators | https://rpc.mainnet.near.org | ok | 2026-11-07T10:07:46+00:00 |
+| rpc_protocol_config | https://rpc.mainnet.near.org | ok | 2026-11-07T10:07:46+00:00 |
+| nearblocks_charts | https://api.nearblocks.io/v1/charts | ok | 2026-11-07T10:07:46+00:00 |
+| nearblocks_stats | https://api.nearblocks.io/v1/stats | ok | 2026-11-07T10:07:46+00:00 |
+| llama_chain_tvl | https://api.llama.fi/v2/historicalChainTvl/Near | ok | 2026-11-07T10:07:46+00:00 |
+| llama_chain_fees | https://api.llama.fi/summary/fees/near?dataType=dailyFees | ok | 2026-11-07T10:07:46+00:00 |
+| llama_chain_revenue | https://api.llama.fi/summary/fees/near?dataType=dailyRevenue | ok | 2026-11-07T10:07:46+00:00 |
+| llama_stablecoins | https://stablecoins.llama.fi/stablecoincharts/Near | ok | 2026-11-07T10:07:46+00:00 |
+| llama_stablecoin_chains | https://stablecoins.llama.fi/stablecoinchains | ok | 2026-11-07T10:07:46+00:00 |
+| llama_chain_dex | https://api.llama.fi/overview/dexs/near | ok | 2026-11-07T10:07:46+00:00 |
+| llama_intents_volume | https://api.llama.fi/summary/dexs/near-intents | ok | 2026-11-07T10:07:46+00:00 |
+| llama_intents_fees | https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees | ok | 2026-11-07T10:07:46+00:00 |
+| price_history | https://api.coingecko.com/api/v3/coins/near/market_chart?vs_currency=usd&days=365&interval=daily | ok | 2026-11-07T10:07:46+00:00 |
+| intents_explorer | https://explorer.near-intents.org/api/v0/transactions | failed: HTTP 400: {"code":"Bad Request","error":{"code":"MISSING_TOKEN","message":"Missing authorization header"}} | 2026-11-07T10:07:46+00:00 |
