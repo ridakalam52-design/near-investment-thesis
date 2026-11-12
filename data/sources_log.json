@@ -4,104 +4,104 @@
   "label": "NEAR RPC https://rpc.mainnet.near.org",
   "url": "https://rpc.mainnet.near.org",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "rpc_validators",
   "label": "NEAR RPC https://rpc.mainnet.near.org",
   "url": "https://rpc.mainnet.near.org",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "rpc_protocol_config",
   "label": "NEAR RPC https://rpc.mainnet.near.org",
   "url": "https://rpc.mainnet.near.org",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "nearblocks_charts",
   "label": "NearBlocks daily charts",
   "url": "https://api.nearblocks.io/v1/charts",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "nearblocks_stats",
   "label": "NearBlocks stats",
   "url": "https://api.nearblocks.io/v1/stats",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_chain_tvl",
   "label": "DefiLlama chain TVL",
   "url": "https://api.llama.fi/v2/historicalChainTvl/Near",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_chain_fees",
   "label": "DefiLlama NEAR chain fees",
   "url": "https://api.llama.fi/summary/fees/near?dataType=dailyFees",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_chain_revenue",
   "label": "DefiLlama NEAR chain revenue (burn)",
   "url": "https://api.llama.fi/summary/fees/near?dataType=dailyRevenue",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_stablecoins",
   "label": "DefiLlama stablecoins on NEAR",
   "url": "https://stablecoins.llama.fi/stablecoincharts/Near",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_stablecoin_chains",
   "label": "DefiLlama stablecoins by chain",
   "url": "https://stablecoins.llama.fi/stablecoinchains",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_chain_dex",
   "label": "DefiLlama DEX volume on NEAR",
   "url": "https://api.llama.fi/overview/dexs/near",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_intents_volume",
   "label": "DefiLlama NEAR Intents volume",
   "url": "https://api.llama.fi/summary/dexs/near-intents",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "llama_intents_fees",
   "label": "DefiLlama NEAR Intents fees",
   "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "price_history",
   "label": "CoinGecko market_chart 365d",
   "url": "https://api.coingecko.com/api/v3/coins/near/market_chart?vs_currency=usd&days=365&interval=daily",
   "status": "ok",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  },
  {
   "source": "intents_explorer",
   "label": "NEAR Intents Explorer API (needs JWT)",
   "url": "https://explorer.near-intents.org/api/v0/transactions",
   "status": "failed: HTTP 400: {\"code\":\"Bad Request\",\"error\":{\"code\":\"MISSING_TOKEN\",\"message\":\"Missing authorization header\"}}",
-  "fetched_at": "2026-11-11T10:56:36+00:00"
+  "fetched_at": "2026-11-12T11:08:01+00:00"
  }
 ]
