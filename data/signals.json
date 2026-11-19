@@ -5,10 +5,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "NEAR Intents 30d volume is higher than a year ago",
-  "value": 30.492944,
+  "value": 26.77682,
   "threshold_value": 0,
   "status": "BULL",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "intents_momentum",
@@ -16,10 +16,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "NEAR Intents 30d volume is growing month over month",
-  "value": -13.658406,
+  "value": -12.617581,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "usage_growth",
@@ -27,10 +27,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "Daily active accounts (30d avg) higher than a year ago",
-  "value": -73.566732,
+  "value": -73.100554,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "tx_growth",
@@ -38,10 +38,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "Daily transactions (30d avg) higher than a year ago",
-  "value": -84.279931,
+  "value": -84.251209,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "fee_growth",
@@ -49,10 +49,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "Gas fees (NEAR-denominated, 30d) higher than a year ago",
-  "value": -73.940326,
+  "value": -73.916075,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "burn_offsets_issuance",
@@ -60,10 +60,10 @@
   "direction": ">",
   "threshold": 10,
   "claim": "Fee burn offsets at least 10% of max issuance",
-  "value": 0.663468,
+  "value": 0.663943,
   "threshold_value": 10,
   "status": "BEAR",
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  {
   "id": "stablecoin_growth",
@@ -71,10 +71,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "Stablecoin supply on NEAR higher than a year ago",
-  "value": -19.690461,
+  "value": -20.74807,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-18"
+  "as_of": "2026-11-19"
  },
  {
   "id": "tvl_growth",
@@ -82,10 +82,10 @@
   "direction": ">",
   "threshold": 0,
   "claim": "DeFi TVL on NEAR higher than a year ago (USD, price-sensitive)",
-  "value": -6.4694,
+  "value": -6.92392,
   "threshold_value": 0,
   "status": "BEAR",
-  "as_of": "2026-11-18"
+  "as_of": "2026-11-19"
  },
  {
   "id": "security_budget",
@@ -93,7 +93,7 @@
   "direction": ">",
   "threshold": 40,
   "claim": "At least 40% of supply is staked",
-  "value": 45.435517,
+  "value": 45.213246,
   "threshold_value": 40,
   "status": "BULL",
   "as_of": "latest"
